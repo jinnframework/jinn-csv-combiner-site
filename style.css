@@ -1,25 +1,20 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styles */
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: #f8f9fa;
-    color: #212529;
+    color: #333;
     height: 100vh;
     overflow: hidden;
+    line-height: 1.6;
 }
 
 .container {
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.5rem;
 }
 
 header {
@@ -27,65 +22,116 @@ header {
     margin-bottom: 2rem;
 }
 
-.logo {
-    height: 60px;
-    margin-bottom: 1rem;
-}
-
 h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
+    color: #2b2d42;
 }
 
+.tagline {
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+/* Main Content Grid */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     flex-grow: 1;
-    align-items: center;
 }
 
-.screenshot img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
+/* Download Box */
 .download-box {
-    text-align: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Updates Section */
+.updates {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.update-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.update-item h3 {
+    font-size: 1.1rem;
+    color: #2b2d42;
+}
+
+.date {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+
+/* Shared Elements */
+.icon {
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 .button {
-    display: inline-block;
+    display: block;
     background: #2b2d42;
     color: white;
-    padding: 0.8rem 1.5rem;
+    text-align: center;
+    padding: 0.8rem;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
-    margin: 1rem 0;
+    margin: 1.5rem 0 1rem;
     transition: transform 0.2s;
 }
 
 .button:hover {
     transform: translateY(-2px);
+    background: #1d1e2c;
+}
+
+.features ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.features li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features li::before {
+    content: "•";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
 }
 
 footer {
     text-align: center;
     margin-top: auto;
     padding-top: 1.5rem;
-    font-size: 0.9rem;
     color: #6c757d;
+    font-size: 0.9rem;
 }
 
-/* Mobile adaptation */
-@media (max-width: 600px) {
+/* Mobile Responsive */
+@media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .screenshot {
-        order: 2;
+    .updates {
+        max-height: none;
     }
 }
