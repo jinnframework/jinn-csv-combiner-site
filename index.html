@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSV Combiner</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f9fafb;
-      color: #111827;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.25rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      color: white;
-      background-color: #2563eb;
-      border-radius: 0.5rem;
-      transition: background 0.2s;
-    }
-    .buttons a:hover {
-      background-color: #1d4ed8;
-    }
-  </style>
-</head>
-<body>
-  <h1>CSV Combiner</h1>
-  <p>Merge CSVs effortlessly on any platform</p>
-  <div class="buttons">
-    <a href="downloads/CSV-Combiner-Windows.exe">Download for Windows</a>
-    <a href="downloads/CSV-Combiner-macOS.dmg">Download for macOS</a>
-    <a href="downloads/CSV-Combiner-Linux.AppImage">Download for Linux</a>
-    <a href="downloads/CSV-Combiner-Launcher.zip">Download Launcher</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Combiner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-4xl px-6 py-8 text-center space-y-10">
+      <header>
+        <h1 class="text-4xl font-bold tracking-tight mb-2">CSV Combiner</h1>
+        <p class="text-lg text-gray-600">Merge CSV files effortlessly across platforms</p>
+      </header>
+
+      <section class="flex flex-wrap justify-center gap-4">
+        <a href="downloads/CSV-Combiner-Windows.exe" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
+          Download for Windows
+        </a>
+        <a href="downloads/CSV-Combiner-macOS.dmg" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
+          Download for macOS
+        </a>
+        <a href="downloads/CSV-Combiner-Linux.AppImage" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
+          Download for Linux
+        </a>
+        <a href="downloads/CSV-Combiner-Launcher.zip" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
+          Download Launcher
+        </a>
+      </section>
+
+      <section class="bg-white rounded-2xl shadow-md p-6 text-left">
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">✨ Features & Updates</h2>
+        <ul class="space-y-2 text-gray-700 list-disc list-inside">
+          <li>Combine multiple CSV files into one with a single click</li>
+          <li>Automatic header detection and removal of duplicates</li>
+          <li>Drag & drop interface for ease of use</li>
+          <li>Version 2.3.1 (April 2025) – Improved performance & bug fixes</li>
+        </ul>
+      </section>
+
+      <footer class="text-sm text-gray-400 mt-4">
+        &copy; 2025 CSV Combiner
+      </footer>
+    </div>
+  </body>
 </html>
