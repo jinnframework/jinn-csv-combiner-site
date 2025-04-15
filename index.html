@@ -3,102 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Combiner | Jinn Framework</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <title>Jinn Framework | CSV Tools</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header>
-            <h1>CSV Combiner</h1>
-            <p class="subtitle">Version manager for CSV processing tools</p>
+            <h1>Jinn Framework <span>CSV Tools</span></h1>
+            <p class="subtitle">Powerful CSV processing utilities</p>
         </header>
 
-        <!-- Main Content Grid -->
-        <main>
-            <!-- Launcher Section -->
-            <section class="card">
-                <div class="card-header">
-                    <h2><span class="icon">🚀</span> Launcher</h2>
-                    <span class="pill">Latest</span>
+        <!-- Main Products Grid -->
+        <main class="products-grid">
+            <!-- Launcher Card -->
+            <section class="product-card">
+                <div class="product-header">
+                    <img src="assets/icons/launch.svg" alt="" class="product-icon">
+                    <h2>CSV Combiner Launcher</h2>
                 </div>
-                <p>Central control panel for all CSV Combiner versions</p>
+                <img src="assets/launcher-screenshot.png" alt="Launcher Preview" class="screenshot">
+                <p>Manage and switch between multiple CSV Combiner versions</p>
                 <ul class="features">
-                    <li>• Switch between versions instantly</li>
-                    <li>• Manage column configurations</li>
-                    <li>• Auto-update notifications</li>
+                    <li>• Version control with semantic numbering</li>
+                    <li>• One-click version switching</li>
+                    <li>• Automatic updates</li>
                 </ul>
-                <a href="https://github.com/jinn-framework/csv-combiner/releases/latest/download/launcher.exe" class="button">
-                    Download Launcher (v2.1.0)
-                </a>
-                <div class="os-badges">
-                    <span class="badge windows">Windows</span>
-                    <span class="badge mac">macOS</span>
-                    <span class="badge linux">Linux</span>
+                <div class="download-section">
+                    <a href="#" class="download-button">
+                        <span>Download Launcher</span>
+                        <span class="version">v2.1.0</span>
+                    </a>
+                    <div class="os-icons">
+                        <img src="assets/icons/windows.svg" alt="Windows" title="Windows">
+                        <img src="assets/icons/apple.svg" alt="macOS" title="macOS">
+                        <img src="assets/icons/linux.svg" alt="Linux" title="Linux">
+                    </div>
                 </div>
             </section>
 
-            <!-- Versions Section -->
-            <section class="versions-grid">
-                <div class="card version-card">
-                    <div class="card-header">
-                        <h3>v2.1.0</h3>
-                        <span class="pill stable">Stable</span>
-                    </div>
-                    <p class="date">Released: 2023-11-15</p>
-                    <ul>
-                        <li>• Semantic version support</li>
-                        <li>• Improved performance</li>
-                    </ul>
-                    <div class="download-links">
-                        <a href="#" class="link">Windows (.exe)</a>
-                        <a href="#" class="link">macOS (.dmg)</a>
-                        <a href="#" class="link">Linux (.deb)</a>
-                    </div>
+            <!-- Combiner Card -->
+            <section class="product-card">
+                <div class="product-header">
+                    <img src="assets/icons/combine.svg" alt="" class="product-icon">
+                    <h2>CSV Combiner</h2>
                 </div>
-
-                <div class="card version-card">
-                    <div class="card-header">
-                        <h3>v2.0.3</h3>
-                        <span class="pill stable">Stable</span>
+                <img src="assets/combiner-screenshot.png" alt="Combiner Preview" class="screenshot">
+                <p>Merge and transform CSV files with advanced options</p>
+                <ul class="features">
+                    <li>• Column pairing and renaming</li>
+                    <li>• Batch processing</li>
+                    <li>• Custom delimiters</li>
+                </ul>
+                <div class="download-section">
+                    <div class="version-selector">
+                        <select>
+                            <option>Latest (v3.2.0)</option>
+                            <option>v3.1.4</option>
+                            <option>v3.0.9</option>
+                            <option>v2.5.7 (Legacy)</option>
+                        </select>
                     </div>
-                    <p class="date">Released: 2023-10-28</p>
-                    <ul>
-                        <li>• Bug fixes</li>
-                        <li>• Improved CSV parsing</li>
-                    </ul>
-                    <div class="download-links">
-                        <a href="#" class="link">Windows</a>
-                        <a href="#" class="link">macOS</a>
-                        <a href="#" class="link">Linux</a>
-                    </div>
-                </div>
-
-                <div class="card version-card">
-                    <div class="card-header">
-                        <h3>v2.1.0-beta</h3>
-                        <span class="pill beta">Beta</span>
-                    </div>
-                    <p class="date">Released: 2023-11-10</p>
-                    <ul>
-                        <li>• Experimental features</li>
-                        <li>• Early access</li>
-                    </ul>
-                    <div class="download-links">
-                        <a href="#" class="link">Windows</a>
-                        <a href="#" class="link">macOS</a>
-                    </div>
+                    <a href="#" class="download-button">
+                        <span>Download Combiner</span>
+                    </a>
                 </div>
             </section>
         </main>
 
+        <!-- Version Archive -->
+        <section class="version-archive">
+            <h3><img src="assets/icons/history.svg" alt=""> Version Archive</h3>
+            <div class="version-grid">
+                <!-- Example Version Entry -->
+                <div class="version-card">
+                    <div class="version-header">
+                        <h4>CSV Combiner v3.2.0</h4>
+                        <span class="release-date">2023-11-20</span>
+                    </div>
+                    <div class="version-links">
+                        <a href="#"><img src="assets/icons/windows.svg" alt="Windows"> .exe</a>
+                        <a href="#"><img src="assets/icons/apple.svg" alt="macOS"> .dmg</a>
+                        <a href="#"><img src="assets/icons/linux.svg" alt="Linux"> .deb</a>
+                    </div>
+                </div>
+                <!-- Additional versions would go here -->
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer>
             <div class="footer-links">
-                <a href="https://github.com/jinn-framework/csv-combiner">GitHub</a>
-                <a href="https://github.com/jinn-framework/csv-combiner/issues">Report Issue</a>
-                <a href="https://github.com/jinn-framework/csv-combiner/releases">All Releases</a>
+                <a href="https://github.com/jinn-framework">GitHub</a>
+                <a href="https://github.com/jinn-framework/csv-combiner/issues">Issues</a>
+                <a href="#">Documentation</a>
             </div>
             <p class="copyright">© 2023 Jinn Framework</p>
         </footer>
