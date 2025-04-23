@@ -7,46 +7,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-white text-gray-800 font-sans min-h-screen flex items-center justify-center">
-    <div class="max-w-4xl w-full px-6 py-8 space-y-12">
-      
+    <div class="max-w-2xl w-full px-6 py-10 space-y-10 text-center">
+
       <!-- Header -->
-      <header class="text-center">
-        <h1 class="text-5xl font-bold tracking-tight mb-2">CSV Combiner</h1>
-        <p class="text-lg text-gray-500">Merge CSV files instantly on any OS</p>
+      <header>
+        <h1 class="text-5xl font-bold mb-2">CSV Combiner</h1>
+        <p class="text-lg text-gray-500">A lightweight tool to merge CSVs with Python</p>
       </header>
 
-      <!-- Downloads -->
-      <section class="flex flex-wrap justify-center gap-4">
-        <a href="downloads/CSV-Combiner-Windows.exe" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
-          Windows Download
+      <!-- Universal Download -->
+      <section class="space-y-3">
+        <a href="downloads/CSV-Combiner.zip" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow inline-block">
+          Download CSV Combiner (Universal Python)
         </a>
-        <a href="downloads/CSV-Combiner-macOS.dmg" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
-          macOS Download
-        </a>
-        <a href="downloads/CSV-Combiner-Linux.AppImage" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
-          Linux Download
-        </a>
-        <a href="downloads/CSV-Combiner-Launcher.zip" class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 shadow">
-          Download Launcher
-        </a>
+        <p class="text-sm text-gray-500">Requires Python 3.7+</p>
+        <pre class="text-left text-sm bg-gray-100 rounded-lg p-4 overflow-x-auto text-gray-700">
+# Run the app
+$ pip install -r requirements.txt
+$ python csv_combiner.py
+        </pre>
       </section>
 
-      <!-- Features & Updates -->
-      <section class="bg-gray-50 rounded-xl p-6 shadow-inner border border-gray-100">
-        <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Features & Updates</h2>
-        <div class="grid sm:grid-cols-2 gap-4 text-gray-700 text-sm">
-          <div>✔️ Combine unlimited CSV files</div>
-          <div>✔️ Auto-detect headers & remove duplicates</div>
-          <div>✔️ Cross-platform: Windows, macOS, Linux</div>
-          <div>✔️ Fast, lightweight launcher included</div>
-          <div>🛠️ <code class="text-sm text-gray-500">v2.3.1 - Apr 2025</code></div>
-          <div>🧹 Bug fixes & improved file encoding support</div>
-        </div>
+      <!-- Features -->
+      <section class="text-left bg-gray-50 p-6 rounded-xl border shadow-sm">
+        <h2 class="text-xl font-semibold mb-4">✨ Features</h2>
+        <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
+          <li>Combine multiple CSV files into a single output</li>
+          <li>Automatic header management</li>
+          <li>Supports drag & drop (when run with GUI)</li>
+          <li>Cross-platform: works on Windows, macOS, and Linux</li>
+        </ul>
+        <p class="mt-4 text-xs text-gray-400 italic">Version 2.3.1 — April 2025</p>
       </section>
 
       <!-- Footer -->
-      <footer class="text-center text-xs text-gray-400">
-        &copy; 2025 CSV Combiner — Built with ❤️ for simplicity
+      <footer class="text-xs text-gray-400">
+        &copy; 2025 CSV Combiner — Python-based and open source
       </footer>
 
     </div>
