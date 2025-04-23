@@ -1,106 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinn Framework | CSV Tools</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Jinn Framework <span>CSV Tools</span></h1>
-            <p class="subtitle">Powerful CSV processing utilities</p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Combiner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans min-h-screen flex items-center justify-center">
+    <div class="max-w-4xl w-full px-6 py-8 space-y-12">
+      
+      <!-- Header -->
+      <header class="text-center">
+        <h1 class="text-5xl font-bold tracking-tight mb-2">CSV Combiner</h1>
+        <p class="text-lg text-gray-500">Merge CSV files instantly on any OS</p>
+      </header>
 
-        <!-- Main Products Grid -->
-        <main class="products-grid">
-            <!-- Launcher Card -->
-            <section class="product-card">
-                <div class="product-header">
-                    <img src="assets/icons/launch.svg" alt="" class="product-icon">
-                    <h2>CSV Combiner Launcher</h2>
-                </div>
-                <img src="assets/launcher-screenshot.png" alt="Launcher Preview" class="screenshot">
-                <p>Manage and switch between multiple CSV Combiner versions</p>
-                <ul class="features">
-                    <li>• Version control with semantic numbering</li>
-                    <li>• One-click version switching</li>
-                    <li>• Automatic updates</li>
-                </ul>
-                <div class="download-section">
-                    <a href="#" class="download-button">
-                        <span>Download Launcher</span>
-                        <span class="version">v2.1.0</span>
-                    </a>
-                    <div class="os-icons">
-                        <img src="assets/icons/windows.svg" alt="Windows" title="Windows">
-                        <img src="assets/icons/apple.svg" alt="macOS" title="macOS">
-                        <img src="assets/icons/linux.svg" alt="Linux" title="Linux">
-                    </div>
-                </div>
-            </section>
+      <!-- Downloads -->
+      <section class="flex flex-wrap justify-center gap-4">
+        <a href="downloads/CSV-Combiner-Windows.exe" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
+          Windows Download
+        </a>
+        <a href="downloads/CSV-Combiner-macOS.dmg" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
+          macOS Download
+        </a>
+        <a href="downloads/CSV-Combiner-Linux.AppImage" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
+          Linux Download
+        </a>
+        <a href="downloads/CSV-Combiner-Launcher.zip" class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 shadow">
+          Download Launcher
+        </a>
+      </section>
 
-            <!-- Combiner Card -->
-            <section class="product-card">
-                <div class="product-header">
-                    <img src="assets/icons/combine.svg" alt="" class="product-icon">
-                    <h2>CSV Combiner</h2>
-                </div>
-                <img src="assets/combiner-screenshot.png" alt="Combiner Preview" class="screenshot">
-                <p>Merge and transform CSV files with advanced options</p>
-                <ul class="features">
-                    <li>• Column pairing and renaming</li>
-                    <li>• Batch processing</li>
-                    <li>• Custom delimiters</li>
-                </ul>
-                <div class="download-section">
-                    <div class="version-selector">
-                        <select>
-                            <option>Latest (v3.2.0)</option>
-                            <option>v3.1.4</option>
-                            <option>v3.0.9</option>
-                            <option>v2.5.7 (Legacy)</option>
-                        </select>
-                    </div>
-                    <a href="#" class="download-button">
-                        <span>Download Combiner</span>
-                    </a>
-                </div>
-            </section>
-        </main>
+      <!-- Features & Updates -->
+      <section class="bg-gray-50 rounded-xl p-6 shadow-inner border border-gray-100">
+        <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Features & Updates</h2>
+        <div class="grid sm:grid-cols-2 gap-4 text-gray-700 text-sm">
+          <div>✔️ Combine unlimited CSV files</div>
+          <div>✔️ Auto-detect headers & remove duplicates</div>
+          <div>✔️ Cross-platform: Windows, macOS, Linux</div>
+          <div>✔️ Fast, lightweight launcher included</div>
+          <div>🛠️ <code class="text-sm text-gray-500">v2.3.1 - Apr 2025</code></div>
+          <div>🧹 Bug fixes & improved file encoding support</div>
+        </div>
+      </section>
 
-        <!-- Version Archive -->
-        <section class="version-archive">
-            <h3><img src="assets/icons/history.svg" alt=""> Version Archive</h3>
-            <div class="version-grid">
-                <!-- Example Version Entry -->
-                <div class="version-card">
-                    <div class="version-header">
-                        <h4>CSV Combiner v3.2.0</h4>
-                        <span class="release-date">2023-11-20</span>
-                    </div>
-                    <div class="version-links">
-                        <a href="#"><img src="assets/icons/windows.svg" alt="Windows"> .exe</a>
-                        <a href="#"><img src="assets/icons/apple.svg" alt="macOS"> .dmg</a>
-                        <a href="#"><img src="assets/icons/linux.svg" alt="Linux"> .deb</a>
-                    </div>
-                </div>
-                <!-- Additional versions would go here -->
-            </div>
-        </section>
+      <!-- Footer -->
+      <footer class="text-center text-xs text-gray-400">
+        &copy; 2025 CSV Combiner — Built with ❤️ for simplicity
+      </footer>
 
-        <!-- Footer -->
-        <footer>
-            <div class="footer-links">
-                <a href="https://github.com/jinn-framework">GitHub</a>
-                <a href="https://github.com/jinn-framework/csv-combiner/issues">Issues</a>
-                <a href="#">Documentation</a>
-            </div>
-            <p class="copyright">© 2023 Jinn Framework</p>
-        </footer>
     </div>
-</body>
+  </body>
 </html>
