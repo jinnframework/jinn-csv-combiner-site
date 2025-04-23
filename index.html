@@ -15,14 +15,32 @@
         <p class="text-lg text-gray-500">A lightweight tool to merge CSVs with Python</p>
       </header>
 
-      <!-- Universal Download -->
-      <section class="space-y-3">
-        <a href="downloads/CSV-Combiner.zip" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow inline-block">
-          Download CSV Combiner (Universal Python)
-        </a>
-        <p class="text-sm text-gray-500">Requires Python 3.7+</p>
+      <!-- Downloads Section -->
+      <section class="space-y-6">
+
+        <!-- Launcher Download -->
+        <div>
+          <a href="downloads/CSV-Combiner-Launcher.zip"
+             class="px-6 py-4 bg-red-600 text-white rounded-xl shadow-md hover:bg-red-700 font-semibold text-lg inline-block">
+            🔒 Download Required Launcher
+          </a>
+          <p class="text-sm text-red-500 mt-2">
+            This launcher is <strong>mandatory</strong> to run the CSV Combiner app.
+          </p>
+        </div>
+
+        <!-- CSV Combiner Download -->
+        <div>
+          <a href="downloads/CSV-Combiner.zip"
+             class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow inline-block">
+            📦 Download CSV Combiner (Universal Python)
+          </a>
+          <p class="text-sm text-gray-500 mt-1">Requires Python 3.7+</p>
+        </div>
+
+        <!-- Run Instructions -->
         <pre class="text-left text-sm bg-gray-100 rounded-lg p-4 overflow-x-auto text-gray-700">
-# Run the app
+# Setup and run the app
 $ pip install -r requirements.txt
 $ python csv_combiner.py
         </pre>
@@ -32,10 +50,10 @@ $ python csv_combiner.py
       <section class="text-left bg-gray-50 p-6 rounded-xl border shadow-sm">
         <h2 class="text-xl font-semibold mb-4">✨ Features</h2>
         <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
-          <li>Combine multiple CSV files into a single output</li>
-          <li>Automatic header management</li>
-          <li>Supports drag & drop (when run with GUI)</li>
-          <li>Cross-platform: works on Windows, macOS, and Linux</li>
+          <li>Merge multiple CSV files into a single output</li>
+          <li>Auto header detection and deduplication</li>
+          <li>Cross-platform support (Windows, macOS, Linux)</li>
+          <li>Works with a lightweight launcher app</li>
         </ul>
         <p class="mt-4 text-xs text-gray-400 italic">Version 2.3.1 — April 2025</p>
       </section>
